@@ -6,7 +6,7 @@ import './styles.scss';
 
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import featureReducer from '../Reducers';
+import featureReducer from './Reducers/featureReducer';
 //STEP 1:  Create a store
 const store = createStore(featureReducer);
 console.log('it is working', store.getState());
